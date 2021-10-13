@@ -20,7 +20,7 @@
   - of each paragraph element
   - run 'ng serve' in the terminal and each paragraph element should have a change of style
 
-2. Create multiple components
+3. Create multiple components
   - create a new angular project: create-multiple-components
   - manually create or use the angular CLI to generate two components: navbar and home
   - edit the navbar's component template(navbar.component.html), create a paragraph element with content "I'm the navbar!"
@@ -30,7 +30,7 @@
 
 ![alt text](/assets/images/1-the-basics/1.png)
 
-3. Create nested components
+4. Create nested components
   - create a new angular: create-nested-components
   - generate three components: child-one,child-two,child-three
   - edit child-one's template, create a paragraph element with content "I'm the app component's child!"
@@ -43,7 +43,7 @@
 
 ![alt text](/assets/images/1-the-basics/2.png)
 
-4. Create complex structure components
+5. Create complex structure components
   - create a new angular project: create-complex-structure
   - Generate a component structure that looks similiar to the diagram
   - run ng serve in the terminal and you should see each components template rendered.
