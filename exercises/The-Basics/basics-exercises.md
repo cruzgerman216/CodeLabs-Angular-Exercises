@@ -123,8 +123,18 @@ Example: If isDisabled is true
   - run 'ng serve' to confirm this works.
 
 15. Dynamically change the value of a class property without using ngModel
-  -   - Create a new angular project called input-event-binding-example
+  - Create a new angular project called input-event-binding-example
   - In app.component.ts, create a class property called title of type string and set it equal to "header"
   - In app.component.html, create an h1 element and use string interpolation to output the value of the class property header.
   - Create an input element that implements event binding and property binding to get the same effect of ngModel
 Notes: You will need to use attributes input for event binding and value for property binding
+
+16. Use ngIf and a class property to show the element, if the class property is false, it shouldn't show the element
+  - Create a new angular project called basic-ngif-example
+  - In app.component.ts, create a class property called isShow of type boolean and set it to true.
+  - In app.component.html, create a paragraph element with the content of "Show me when isShow is true! Otherwise, don't show me!"
+  - Use ngIf to conditionally show the paragraph element for when isShow is true, otherwise don't show it if it's false.
+  - run 'ng serve', isShow is set to true so you should see your paragraph element there.
+  - Set isShow to false, and it shouldn't show in the webpage.
+
+17. 
