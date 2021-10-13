@@ -97,4 +97,34 @@ Reference: https://www.w3schools.com/tags/tag_input.asp
   - now add two more attributes: width and height and use property binding to set it to the class properties you made in your app.component.ts file.
 
 Reference: https://www.w3schools.com/tags/att_height.asp
-12. 
+
+12. Click on a button to log to the console a message
+  - Create a new angular project called basic-event-binding
+  - In app.component.html, create a button element with content "Click me to log to the console!"
+  - Implement event binding to the button element you created so that, whenver you click the button, it logs a message(could be anything) to the console.
+  - run 'ng serve' and click on the button. You should be able to see something output to the console in the dev tools of your browser.
+
+13. Dynamically disable and enable the input field using event binding and property binding. 
+  - Create a new angular project called dynamic-button-event-binding
+  - In app.component.ts, create a class property called isDisabled of type boolean and set it to true.
+  - In app.component.html, create an input element and incorporate property binding by disabling or enabling the input element depending on the value of the class property isDisabled. 
+  - Create a button element with content "Click me to change the value of isDisabled!"
+  - Use event binding for whenever you click te button, you set isDisabled to the opposite of it's current value.
+Example: If isDisabled is true
+        when I click on the button, isDisabled is set to false.
+  - In the button element content, it currently has "Click me to change the value of isDisabled!", use the ternary opperator and string interpolation to be able to output "Currenlty disabled" when the isDisabled property is true, and vice versa for when it's false.
+  - run 'ng serve'. You should be able to type into the input field when isDisabled is false and vice versa for when it is true.
+
+14. Use ngModel to dynamically change the value of a class property
+  - Create a new angular project called basic-ngmodel-example
+  - In app.component.ts, create a class property called title of type string and set it equal to "header"
+  - In app.component.html, create an h1 element and use string interpolation to output the value of the class property header.
+  - Create an input element that implements two way data binding, ngModel, that will dynamically change the value of header for whenever you type into the input field.
+  - run 'ng serve' to confirm this works.
+
+15. Dynamically change the value of a class property without using ngModel
+  -   - Create a new angular project called input-event-binding-example
+  - In app.component.ts, create a class property called title of type string and set it equal to "header"
+  - In app.component.html, create an h1 element and use string interpolation to output the value of the class property header.
+  - Create an input element that implements event binding and property binding to get the same effect of ngModel
+Notes: You will need to use attributes input for event binding and value for property binding
