@@ -11,5 +11,5 @@
   - nest child-two into child-one
   - nest child-one, into the app component
 
+![alt text](/assets/images/1-the-basics/1.png)
 
-![alt text](/assets/images/1-the-basics/1)
