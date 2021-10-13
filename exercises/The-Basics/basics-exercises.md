@@ -46,13 +46,18 @@
   - nest childone into app component
   - nest childtwo into childone
   - nest childthree into childtwo
-  - run ng serve in the terminal and you should see each components template rendered onto the webpage.
+  - run 'ng serve' in the terminal and you should see each components template rendered onto the webpage.
 
 ![alt text](/assets/images/1-the-basics/2.png)
 
 6. Create complex structure components
   - create a new angular project with the name of create-complex-structure
   - Generate a component structure that looks similiar to the diagram
-  - run ng serve in the terminal and you should see each components template rendered.
+  - run 'ng serve' in the terminal and you should see each components template rendered.
   ![alt text](/assets/images/1-the-basics/3.png)
 
+7. Use string interpolation to output content to the webpage
+  - create a new angular project with the name of string-interpolation-exercise
+  - create a property in app.component.ts called "name", set it's type to string and equal to your name.
+  - create a paragraph element and use string interpolation to output the value of name.
+  - run 'ng serve' in the terminal and you should see your name on the webpage.
