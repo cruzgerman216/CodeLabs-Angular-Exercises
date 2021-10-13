@@ -84,4 +84,17 @@
 10. Use property binding to disable an input element
   - create a new angular project called basic-property-binding
   - In app.component.ts, create a class property called isDisabled with type boolean and set it equal to true
-  - In app.component.html, create an input element and use property binding to bind
+  - In app.component.html, create an input element and use property binding to bind the html attribute disabled(see reference of what it is) to the set class property isDisabled.
+  - run 'ng serve', if it works, you shouldn't be able to type anything in the input field
+  - now set isDisabled to false then run 'ng serve', you should be able to type in the input field.
+
+Reference: https://www.w3schools.com/tags/tag_input.asp
+
+11. Use property binding to adjust the height and width of an image.
+  - create a new angular project called property-binding-image-size
+  - In app.component.ts, create two class properties called width and height. Both properties have type number and a value between 100 - 500 (you choose the number)
+  - In app.component.html, create an img element(see reference of an example) and include it's src attribute. Copy an image address link from google (make sure it has an image extension at the end of the link) and set src to the image link. 
+  - now add two more attributes: width and height and use property binding to set it to the class properties you made in your app.component.ts file.
+
+Reference: https://www.w3schools.com/tags/att_height.asp
+12. 
