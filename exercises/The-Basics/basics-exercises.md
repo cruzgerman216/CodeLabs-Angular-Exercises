@@ -58,6 +58,27 @@
 
 7. Use string interpolation to output content to the webpage
   - create a new angular project with the name of string-interpolation-exercise
-  - create a property in app.component.ts called "name", set it's type to string and equal to your name.
+  - create a property in app.component.ts called "name", set it's type to string and make it equal to your name(for example: "John")
   - create a paragraph element and use string interpolation to output the value of name.
   - run 'ng serve' in the terminal and you should see your name on the webpage.
+
+
+8. Use string interpolation to output the values an object holds
+  - create a new angular project with the name of string-interpolation-object
+  - generate a component called post
+  - nest the post component in app component
+  - In app.component.ts, create a class property called heading with a type string and set it equal to "user post".
+  - In app.component.ts, create a class property called num with a type number and set it equal to 1. 
+  - In the app.component.html file, create a h1 elmeent with the content of both class properties heading and num.
+  - in the post.component.ts, create a class property called 'info' that is an object with properties: firstname, lastname, content. Fill in the values for these properties
+  - use string interpolation to output these properties values from the object. 
+  - run 'ng serve' in the terminal to see the values of the object onto the page, also heading,num.
+
+9. Use a ternary operator to dynamically output content
+  - create a new angular project with the name of ternary-operator-string-interpolation.
+  - generate a component called navbar and nest it in the app acomponent
+  - In navbar.component.ts, create a property called loggedIn with type boolean and set it equal to true;
+  - In navbar.component.html, create a div element, in the div element, use string interpolation to output "I am logged in!" if the loggedIn class property is true, otherwise output "I am logged out!". 
+
+  Example of ternary operator: true ? "" : ""
+
