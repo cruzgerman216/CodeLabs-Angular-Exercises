@@ -137,4 +137,27 @@ Notes: You will need to use attributes input for event binding and value for pro
   - run 'ng serve', isShow is set to true so you should see your paragraph element there.
   - Set isShow to false, and it shouldn't show in the webpage.
 
-17. 
+17. Use ngIf and else to dynamically add certain elements to the webpage
+  - Create a new angular project called basic-ngif-else-example
+  - In app.component.ts, create a class property called isShowContent of type boolean and set it to true
+  - In app.component.html, create a paragraph element with content "If isShowContent is true, show me!" and
+  another paragraph with content "Use else to show me!"
+  - use ngIf and else to show either or depending on the value of isShowContent.
+  - Create a button element with content "Click me to reverse the value of isShowContent!" Use event binding to reverse the value of isShowContent.
+
+18. Use ngStyle to change the background color of an element
+  - Create a new angular project called basic-ngStyle-example
+  - In app.component.ts, create a class property called myColor of type string and set it to "green"
+  - In app.component.html, create a paragraph element with content "This should change when we implement ngStyle!" 
+  - Implement ngStyle and use myColor to change the background color of the paragraph element.
+  - run 'ng serve' The paragraph element should have background color of green.
+
+19. Use ngStyle and event binding to dynamically change the content of an element and it's style.
+  - Create a new angular project called dynamically-change-content-ngstyle-example
+  - In the app.component.ts, create a class property called changeColor, make it of type string and set it to 'green'.
+  - In the app.component.html, create an input element. Whenever you type into this input field, it should dynamically change the value of changeColor to whatever you type. You can use either ngModel or event binding to do this.
+  - Create a paragraph element. Use string interpolation to output the value of changeColor between the tags of the paragraph element.
+  - Use ngStyle and changeColor to change the color of the content that the paragraph element holds.
+  - run 'ng serve'. If you type in yellow, the color of the text should change to yellow.
+
+
