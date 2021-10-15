@@ -1,7 +1,8 @@
 
 # The Basics Exercise
 ### Use Git or GitHub Desktop to push each exercise to GitHub
-### make projects all non-strict mode
+### Make projects all non-strict mode
+
 1. Manually create a component
   - create a new angular project called manually-create-component
   - without using the angular cli to generate a component, manually create a 
@@ -155,9 +156,14 @@ Notes: You will need to use attributes input for event binding and value for pro
 19. Use ngStyle and event binding to dynamically change the content of an element and it's style.
   - Create a new angular project called dynamically-change-content-ngstyle-example
   - In the app.component.ts, create a class property called changeColor, make it of type string and set it to 'green'.
-  - In the app.component.html, create an input element. Whenever you type into this input field, it should dynamically change the value of changeColor to whatever you type. You can use either ngModel or event binding to do this.
+  - In app.component.html, create an input element. Whenever you type into this input field, it should dynamically change the value of changeColor to whatever you type. You can use either ngModel or event binding to do this.
   - Create a paragraph element. Use string interpolation to output the value of changeColor between the tags of the paragraph element.
   - Use ngStyle and changeColor to change the color of the content that the paragraph element holds.
   - run 'ng serve'. If you type in yellow, the color of the text should change to yellow.
+
+20. Use ngFor to output each element of an Array
+  - Create a new angular project called basic-ngFor-example
+  - In app.component.ts, create a class property called foods, make it type array of strings and set its array to pre-set strings. 
+  - In app.component.html, use ngfor to output the array list of foods
 
 
