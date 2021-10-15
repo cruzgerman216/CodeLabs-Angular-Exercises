@@ -165,5 +165,6 @@ Notes: You will need to use attributes input for event binding and value for pro
   - Create a new angular project called basic-ngFor-example
   - In app.component.ts, create a class property called foods, make it type array of strings and set its array to pre-set strings. 
   - In app.component.html, use ngfor to output the array list of foods
+  - run 'ng serve' you should be able to see each element of the array on the web page
 
 
