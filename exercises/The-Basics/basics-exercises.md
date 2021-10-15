@@ -1,7 +1,7 @@
 
 # The Basics Exercise
-## Use Git or GitHub Desktop to push each exercise to GitHub
-
+### Use Git or GitHub Desktop to push each exercise to GitHub
+### make projects all non-strict mode
 1. Manually create a component
   - create a new angular project called manually-create-component
   - without using the angular cli to generate a component, manually create a 
