@@ -1,9 +1,8 @@
 # Observables Exercise
-## Use Git or GitHub Desktop to push each exercise to GitHub
-## Enable routing and non-strict mode for all projects
+### Use Git or GitHub Desktop to push each exercise to GitHub
+### Enable routing and non-strict mode to all projects
 
 1. **Subscribe to the params observable and log the data to the console**
-
 - Generate a new angular application called basic-observable-example
 - Generate a users component
 - In the app-routing module, create a path such as ```"users/:id"```, it's component will be set to the users component
@@ -14,7 +13,6 @@
 - If you enter "localhost:4200/users/1" to the url search bar, you should be able to see an object that is log to the console such as ```{id: 1}```
 
 2. **User pipe and map to manipulate the data the observable passes through**
-   
 - Generate a new angular application called basip-pipe-map-example
 - Generate a foods component
 - In the app-routing module, create a path such as ```"foods/:search"```, it's component will be set to the foods component.
@@ -33,6 +31,22 @@
 - In app.component.html, include elements with routlinkers to each component so you can switch between both paths. Of course, add the router link element 
 - In timer.component.ts, import interval from rxjs and use it to increment a number every second. Log to the console the incremented number
 - Make sure you unsubscribe from the observable. To make sure you did this right, switch between the paths. If you are in the home path, you shouldn't see anything log to the console.
-- Use the filter operator to pass only even numbers
+- Use the pipe method and the filter operator from rxjs to pass only even numbers
 
     Reference: https://rxjs.dev/api/index/function/interval
+
+4. **Instead of an EventEmitter, use a subject to emit data.**
+Note: Using an event emitter in services is bad practice. Instead use subjects
+- Generate a new angular project called basic-subject-example
+- Generate a navbar component, 
+  - in the navbar.component.html file, include an input element and a button with content "Print my text!"
+  - use two way data binding to store the value of whatever the user type in a class property called search of type string and that is initially empty.
+  - Whenever you click on the button, log to the console the search property
+- Create a service file called data.service.ts, and set a class property called mySearch to a subject.
+- Inject the data service to the navbar component, and use the next method to emit the search property
+- Inject the data service class to the app component, subscribe to the mySearch property and store it's emitted data into a property called searchResult of type stirng and set initally set it to empty. 
+- Use string interpolation to output the value of searchResult to the app.component.html
+- Use the pipe method and filter operator to filter out any searches that equal "hat"
+- Use the map filter to adjust the data to "You searched for " followed by whatever user searches for
+- Unsubscribe from the subject in the app.component.ts file
+    - Note: App.componen.ts is never destroyed but just for practice, do this anyways.
