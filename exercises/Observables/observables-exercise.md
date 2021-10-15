@@ -36,7 +36,7 @@
     Reference: https://rxjs.dev/api/index/function/interval
 
 4. **Instead of an EventEmitter, use a subject to emit data.**
-Note: Using an event emitter in services is bad practice. Instead use subjects
+Note: Using an event emitter in services is bad practice. Instead, use subjects
 - Generate a new angular project called basic-subject-example
 - Generate a navbar component, 
   - in the navbar.component.html file, include an input element and a button with content "Print my text!"
@@ -47,6 +47,6 @@ Note: Using an event emitter in services is bad practice. Instead use subjects
 - Inject the data service class to the app component, subscribe to the mySearch property and store it's emitted data into a property called searchResult of type stirng and set initally set it to empty. 
 - Use string interpolation to output the value of searchResult to the app.component.html
 - Use the pipe method and filter operator to filter out any searches that equal "hat"
-- Use the map filter to adjust the data to "You searched for " followed by whatever user searches for
+- Use the map operator to adjust the data to "You searched for " followed by whatever the user searches for
 - Unsubscribe from the subject in the app.component.ts file
     - Note: App.componen.ts is never destroyed but just for practice, do this anyways.
