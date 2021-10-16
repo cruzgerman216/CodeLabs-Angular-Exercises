@@ -37,10 +37,21 @@
   - In navbar.component.ts, use an event emitter to emit the class property mySearch.
   - Configure app.component.html, to store that information that is being sent by navbar in a class property called searchResult.
   - Use string interpolation to output searchResult.
-  
+
+5. **Pass up information two levels**
+  - Create a new angular project called two-levels-custom-events
+  - Generate a component called bookshelf and bookshelf-list
+  - Bookshelf should be nested in the app component and bookshelf-details should be nested in the bookshelf component
+  - In bookshelf-list.component.ts, create a class property called books that is an array of objects that contain properties such as title and author. Fill the data for multiple objects.
+  - In bookshelf-list.component.ts, use ngFor to output the elements of the class property books. 
+  - Whenever you click on a book, use event binding to execute a method. That method should emit a value to it's parent component bookshelf.
+  - Configure the bookshelf component so that it will use a custom event triggered by it's child component so that it will pass up the information to the app component.
+  - The app component should store this object in a property and use string interpolation to output the values of its properties.
 
 
 
+
+logged in logged out
 
   
 
