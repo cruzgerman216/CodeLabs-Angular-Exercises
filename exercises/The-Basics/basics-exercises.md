@@ -59,7 +59,7 @@
 
 7. Use string interpolation to output content to the webpage
   - create a new angular project called string-interpolation-exercise
-  - create a property in app.component.ts called "name", set it's type to string and make it equal to your name(for example: "John")
+  - create a property in app.component.ts called "name", set it's type to string and make it equal to your name(for exercise: "John")
   - create a paragraph element and use string interpolation to output the value of name.
   - run 'ng serve' in the terminal and you should see your name on the webpage.
 
@@ -80,7 +80,7 @@
   - generate a component called navbar and nest it in the app acomponent
   - In navbar.component.ts, create a property called loggedIn with type boolean and set it equal to true;
   - In navbar.component.html, create a div element, in the div element, use string interpolation to output "I am logged in!" if the loggedIn class property is true, otherwise output "I am logged out!". 
-  Example of ternary operator: true ? "output me if true" : "output me if false"
+  example of ternary operator: true ? "output me if true" : "output me if false"
 
 10. Use property binding to disable an input element
   - create a new angular project called basic-property-binding
@@ -94,13 +94,13 @@ Reference: https://www.w3schools.com/tags/tag_input.asp
 11. Use property binding to adjust the height and width of an image.
   - create a new angular project called property-binding-image-size
   - In app.component.ts, create two class properties called width and height. Both properties have type number and a value between 100 - 500 (you choose the number)
-  - In app.component.html, create an img element(see reference of an example) and include it's src attribute. Copy an image address link from google (make sure it has an image extension at the end of the link) and set src to the image link. 
+  - In app.component.html, create an img element(see reference of an exercise) and include it's src attribute. Copy an image address link from google (make sure it has an image extension at the end of the link) and set src to the image link. 
   - now add two more attributes: width and height and use property binding to set it to the class properties you made in your app.component.ts file.
 
 Reference: https://www.w3schools.com/tags/att_height.asp
 
 12. Click on a button to log to the console a message
-  - Create a new angular project called basic-event-binding
+  - Create a new angular project called basic-event-binding-exercise
   - In app.component.html, create a button element with content "Click me to log to the console!"
   - Implement event binding to the button element you created so that, whenver you click the button, it logs a message(could be anything) to the console.
   - run 'ng serve' and click on the button. You should be able to see something output to the console in the dev tools of your browser.
@@ -111,27 +111,37 @@ Reference: https://www.w3schools.com/tags/att_height.asp
   - In app.component.html, create an input element and incorporate property binding by disabling or enabling the input element depending on the value of the class property isDisabled. 
   - Create a button element with content "Click me to change the value of isDisabled!"
   - Use event binding for whenever you click te button, you set isDisabled to the opposite of it's current value.
-Example: If isDisabled is true
+example: If isDisabled is true
         when I click on the button, isDisabled is set to false.
   - In the button element content, it currently has "Click me to change the value of isDisabled!", use the ternary opperator and string interpolation to be able to output "Currenlty disabled" when the isDisabled property is true, and vice versa for when it's false.
   - run 'ng serve'. You should be able to type into the input field when isDisabled is false and vice versa for when it is true.
 
 14. Use ngModel to dynamically change the value of a class property
-  - Create a new angular project called basic-ngmodel-example
+  - Create a new angular project called basic-ngmodel-exercise
   - In app.component.ts, create a class property called title of type string and set it equal to "header"
   - In app.component.html, create an h1 element and use string interpolation to output the value of the class property header.
   - Create an input element that implements two way data binding, ngModel, that will dynamically change the value of header for whenever you type into the input field.
   - run 'ng serve' to confirm this works.
 
 15. Dynamically change the value of a class property without using ngModel
-  - Create a new angular project called input-event-binding-example
+  - Create a new angular project called input-event-binding-exercise
   - In app.component.ts, create a class property called title of type string and set it equal to "header"
   - In app.component.html, create an h1 element and use string interpolation to output the value of the class property header.
   - Create an input element that implements event binding and property binding to get the same effect of ngModel
-Notes: You will need to use attributes input for event binding and value for property binding
+Notes: You will need to use attributes ```input``` for event binding and ```value``` for property binding
 
-16. Use ngIf and a class property to show the element, if the class property is false, it shouldn't show the element
-  - Create a new angular project called basic-ngif-example
+Reference: 
+https://www.w3schools.com/tags/att_input_value.asp -> learn what ```value``` does to an input element
+You can incorporate event binding to any event listener onClick,onMouseenter, OnInput(https://www.w3schools.com/jsref/dom_obj_event.asp)
+
+The specific event listener we want to use is ```input```, every time the user types, input will trigger an event. Be sure to use the $event to get it's value. log to the console the value. You will see that event.target.value will get you whatever the user type.
+
+```html
+  <input (input)="">
+```
+
+1.  Use ngIf and a class property to show the element, if the class property is false, it shouldn't show the element
+  - Create a new angular project called basic-ngif-exercise
   - In app.component.ts, create a class property called isShow of type boolean and set it to true.
   - In app.component.html, create a paragraph element with the content of "Show me when isShow is true! Otherwise, don't show me!"
   - Use ngIf to conditionally show the paragraph element for when isShow is true, otherwise don't show it if it's false.
@@ -139,7 +149,7 @@ Notes: You will need to use attributes input for event binding and value for pro
   - Set isShow to false, and it shouldn't show in the webpage.
 
 17. Use ngIf and else to dynamically add certain elements to the webpage
-  - Create a new angular project called basic-ngif-else-example
+  - Create a new angular project called basic-ngif-else-exercise
   - In app.component.ts, create a class property called isShowContent of type boolean and set it to true
   - In app.component.html, create a paragraph element with content "If isShowContent is true, show me!" and
   another paragraph with content "Use else to show me!"
@@ -147,14 +157,14 @@ Notes: You will need to use attributes input for event binding and value for pro
   - Create a button element with content "Click me to reverse the value of isShowContent!" Use event binding to reverse the value of isShowContent.
 
 18. Use ngStyle to change the background color of an element
-  - Create a new angular project called basic-ngStyle-example
+  - Create a new angular project called basic-ngStyle-exercise
   - In app.component.ts, create a class property called myColor of type string and set it to "green"
   - In app.component.html, create a paragraph element with content "This should change when we implement ngStyle!" 
   - Implement ngStyle and use myColor to change the background color of the paragraph element.
   - run 'ng serve' The paragraph element should have background color of green.
 
 19. Use ngStyle and event binding to dynamically change the content of an element and it's style.
-  - Create a new angular project called dynamically-change-content-ngstyle-example
+  - Create a new angular project called dynamically-change-content-ngstyle-exercise
   - In the app.component.ts, create a class property called changeColor, make it of type string and set it to 'green'.
   - In app.component.html, create an input element. Whenever you type into this input field, it should dynamically change the value of changeColor to whatever you type. You can use either ngModel or event binding to do this.
   - Create a paragraph element. Use string interpolation to output the value of changeColor between the tags of the paragraph element.
@@ -162,7 +172,7 @@ Notes: You will need to use attributes input for event binding and value for pro
   - run 'ng serve'. If you type in yellow, the color of the text should change to yellow.
 
 20. Use ngFor to output each element of an Array
-  - Create a new angular project called basic-ngFor-example
+  - Create a new angular project called basic-ngFor-exercise
   - In app.component.ts, create a class property called foods, make it type array of strings and set its array to pre-set strings. 
   - In app.component.html, use ngfor to output the array list of foods
   - run 'ng serve' you should be able to see each element of the array on the web page
