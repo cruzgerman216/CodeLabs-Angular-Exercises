@@ -14,7 +14,7 @@
 2. **Passing down information two levels deep using the input decorator**
  - Create a new angular project called angular-nested-components-input-exercise
  - Generate two components called myprofile and posts
- - myprofile should be nested in the component and posts should be nested in the myprofile component
+ - myprofile should be nested in the app component and posts should be nested in the myprofile component
  - In the app.component.ts file, create a class property that is called myPosts that is of type array of strings and set it to an array of pre-filled strings.
  - Pass down myPosts to the myprofile component, and make myprofile pass that down to the posts component.
  - In posts.component.ts, use ngFor to output the array of strings.
