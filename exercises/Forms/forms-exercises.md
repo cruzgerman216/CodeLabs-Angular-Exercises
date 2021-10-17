@@ -37,7 +37,6 @@ Example of @ViewChild
 - All input elements should be required.
 - If the form is invalid, disable the submit button.
 - When the form is invalid, style the form's input element to show it is invalid
-- 
 example of style
 ```css
 input.ng-invalid.ng-touched{border: 1px solid red;}

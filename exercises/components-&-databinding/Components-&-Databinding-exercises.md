@@ -2,7 +2,7 @@
 ### Use Git or GitHub Desktop to push each exercise to GitHub
 ### Make projects all non-strict mode
 
-1. **Allow a child component to recieve values from the parent component using the input decorator**
+**Exercise 1: Allow a child component to recieve values from the parent component using the input decorator**
  - Create a new angular project called angular-basic-custom-property-exercise
  - Generate a component called user, nest user in the app component
  - In app.component.ts, create a class property called name of type string and set it to your name.
@@ -11,7 +11,7 @@
  - In app.component.html, pass down the name property to the user component.
  - run 'ng serve' and you should see your name on the webpage.
 
-2. **Passing down information two levels deep using the input decorator**
+**Exercise 2: Passing down information two levels deep using the input decorator**
  - Create a new angular project called angular-nested-components-input-exercise
  - Generate two components called myprofile and posts
  - myprofile should be nested in the app component and posts should be nested in the myprofile component
@@ -20,7 +20,7 @@
  - In posts.component.html, use ngFor to output the array of strings.
  - run 'ng serve' and you should see a list of strings you addded to the myPosts array.
 
-3. **Use ngFor and the input decorator to allow the parent component to pass down information to the child component**
+**Exercise 3: Use ngFor and the input decorator to allow the parent component to pass down information to the child component**
   - Create a new angular project called angular-ngFor-input-decorator-exercise
   - generate a component called user and nest it in the app component
   - In app.component.ts, create a class property called users that is an array of type object. The object must contain properties user of type string, id of type number. Fill the array with these objects.
@@ -30,7 +30,7 @@
   - Output the user_info in user.component.html, using string interpolation and add an h1 element that has the content "User info!".
   - run 'ng serve' and you should see a list of users and numerous h1 elements.
 
-4. **Use a custom event to pass information to the parent component**
+**Exercise 4: Use a custom event to pass information to the parent component**
   - Create a new angular project called angular-basic-custom-event-exercise
   - Generate a component called navbar and nest it in the app component
   - In navbar.component.html file, create an input element and incorporate two way data binding or any way you like to store whatever the user type in a class property called mySearch. 
@@ -38,7 +38,7 @@
   - Configure app.component.html, to store that information that is being sent by navbar in a class property called searchResult.
   - Use string interpolation to output searchResult.
 
-5. **Pass up information two levels**
+**Exercise 5: Pass up information two levels**
   - Create a new angular project called angular-two-levels-custom-events
   - Generate components called bookshelf and bookshelf-list
   - Bookshelf should be nested in the app component and bookshelf-details should be nested in the bookshelf component
@@ -48,7 +48,7 @@
   - Configure the bookshelf component so that it will recieve the object the user click and use a custom event to pass up the information to the app component.
   - The app component should store this object in a property and use string interpolation to output the values of its properties.
 
-6. **Using the input and output decorators for cross component communication**
+**Exercise 6: Using the input and output decorators for cross component communication**
   - Create a new angular project called angular-output-input-exercise
   - Generate components called navbar and search-page
   - nest both navbar and search-page in the component
