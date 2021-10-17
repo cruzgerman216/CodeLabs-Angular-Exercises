@@ -1,4 +1,4 @@
-# Components & Databind Deep Dive Exercise
+# Components & Databind Deep Dive Exercises
 ### Use Git or GitHub Desktop to push each exercise to GitHub
 ### Make projects all non-strict mode
 

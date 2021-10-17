@@ -1,4 +1,4 @@
-# Forms Exercise
+# Forms Exercises
 ### Use Git or GitHub Desktop to push each exercise to GitHub
 ### Enable routing and non-strict mode to all projects
 
@@ -19,7 +19,7 @@
 - In app.component.html, create a form element. Inside of the form element, create an input element alongside with a button element. Give the button element a type set to submit and content "submit". Give the input element a name that is set to ```"city"```. 
 - Use the template driven approach and @ViewChild to access the values from this form and log them to the console.
 
-Example 
+Example of @ViewChild
 ```typescript
 @ViewChild('f') form:NgForm;
 ```
@@ -30,11 +30,15 @@ Example
 - Add the required validator to the input element
 - Use the template driven approach to log to the console the form's values.
 - When you inspect the input element on the page, once the input field is empty, you should see invalid added onto the input element. Once you type into the field, you should see valid added onto the input element.
-- 
 
-
-5. **Implement a disabled button for when the form is invalid**
+5. **Implement a disabled button for when the form is invalid and style the input fields for when the form is invalid**
 - Generate a new angular application called disabled-form-button-validators-exercise
 - In app.component.html, create a form with input elements and a submit button.
 - All input elements should be required.
 - If the form is invalid, disable the submit button.
+- When the form is invalid, style the form's input element to show it is invalid
+- 
+example of style
+```css
+input.ng-invalid.
+```

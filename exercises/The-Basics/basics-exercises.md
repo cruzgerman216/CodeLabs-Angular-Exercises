@@ -1,5 +1,5 @@
 
-# The Basics Exercise
+# The Basics Exercises
 ### Use Git or GitHub Desktop to push each exercise to GitHub
 ### Make projects all non-strict mode
 

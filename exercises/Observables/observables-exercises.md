@@ -1,4 +1,4 @@
-# Observables Exercise
+# Observable Exercises
 ### Use Git or GitHub Desktop to push each exercise to GitHub
 ### Enable routing and non-strict mode to all projects
 
