@@ -41,3 +41,12 @@ example of style
 ```css
 input.ng-invalid.ng-touched{border: 1px solid red;}
 ```
+
+**Exercise 6: when the form is invalid, use ngIf to let the user know it is invalid**
+- Generate a new angular application called ngIf-invalid-form-exercise
+- In app.component.html, create a form with an input element and a submit button
+- All input elements should be required
+- Disable the button and style the form if it is invalid
+- Use ngIf to display a message "invalid input" for when the form is invalid
+
+

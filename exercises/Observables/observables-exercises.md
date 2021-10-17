@@ -12,7 +12,7 @@
     - With it's reference, subscribe to the observable that is params and log to the console its data.
 - If you enter "localhost:4200/users/1" to the url search bar, you should be able to see an object that is log to the console such as ```{id: 1}```
 
-**Exercise 2: **User pipe and map to manipulate the data the observable passes through**
+**Exercise 2: User pipe and map to manipulate the data the observable passes through**
 - Generate a new angular application called basic-pipe-map-exercise
 - Generate a foods component
 - In the app-routing module, create a path such as ```"foods/:search"```, it's component will be set to the foods component.
@@ -25,7 +25,7 @@
 - Use pipe and the map operator to manipulate the data. Instead of returning an object, return a string that has "the food you search for was " followed by what the user search for. Make sure whatever the user search for, is ALL UPPER CASE when you return the manipulated data. Example: "The food you search for was PIE".
 - If you enter "localhost:4200/foods/pie", you should get the text "The food you search for was PIE" and rendered onto your webpage.
 
-**Exercise 3: **Use filter to manipulate data of an interval observable and the unsubscribe method to destroy the subscription**
+**Exercise 3: Use filter to manipulate data of an interval observable and the unsubscribe method to destroy the subscription**
 - Generate a new angular application called interval-filter-exercise
 - generate a home and timer component and create it's corresponding routing paths "home" and "timer"
 - In app.component.html, include elements with routlinkers to each component so you can switch between both paths. Of course, implement the router link element to the application
@@ -35,7 +35,7 @@
 
     Reference: https://rxjs.dev/api/index/function/interval
 
-**Exercise 4: **Instead of an EventEmitter, use a subject to emit data.**
+**Exercise 4: Instead of an EventEmitter, use a subject to emit data.**
 Note: Using an event emitter in services is bad practice. Instead, use subjects
 - Generate a new angular project called basic-subject-exercise
 - Generate a navbar component, 
