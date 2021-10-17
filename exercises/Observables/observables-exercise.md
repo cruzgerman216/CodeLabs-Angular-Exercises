@@ -13,11 +13,11 @@
 - If you enter "localhost:4200/users/1" to the url search bar, you should be able to see an object that is log to the console such as ```{id: 1}```
 
 2. **User pipe and map to manipulate the data the observable passes through**
-- Generate a new angular application called basip-pipe-map-exercise
+- Generate a new angular application called basic-pipe-map-exercise
 - Generate a foods component
 - In the app-routing module, create a path such as ```"foods/:search"```, it's component will be set to the foods component.
 - Include the router outlet in the app.component.html
-- Inject ActivedRoute to the users component
+- Inject ActivedRoute to the foods component
   - subscribe to the params observable
   - store it's data in a class property called foodSearch that is of type string.
   - Use string interpolation to output the foodSearch class property onto the web page

@@ -17,7 +17,7 @@
  - myprofile should be nested in the app component and posts should be nested in the myprofile component
  - In the app.component.ts file, create a class property that is called myPosts that is of type array of strings and set it to an array of pre-filled strings.
  - Pass down myPosts to the myprofile component, and make myprofile pass that down to the posts component.
- - In posts.component.ts, use ngFor to output the array of strings.
+ - In posts.component.html, use ngFor to output the array of strings.
  - run 'ng serve' and you should see a list of strings you addded to the myPosts array.
 
 3. **Use ngFor and the input decorator to allow the parent component to pass down information to the child component**
