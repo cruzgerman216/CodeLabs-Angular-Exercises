@@ -50,3 +50,12 @@ Note: Using an event emitter in services is bad practice. Instead, use subjects
 - Use the map operator to adjust the data to "You searched for " followed by whatever the user searches for
 - Unsubscribe from the subject in the app.component.ts file
     - Note: App.componen.ts is never destroyed but just for practice, do this anyways.
+
+**Exercise 5: More Subjects**
+[Github Repo Starting Code](https://github.com/WilderDev/Candy-Observables-Project/tree/Starter-Code)
+1. Create a new Subject in the PillowCaseService that emits when the myCandies array updates.
+2. Subscribe to that change and update the local myCandies array.
+3. Create a variable of type "Subscription", store the observable under inside, and use ngOnDestroy to unsubscribe when the component is destoyed.
+4. Create a new Subject in the CandyStoreService that emits when the candiesForSale array updates.
+5. Subscribe to that change and update the local candiesForSale array.
+6. Create a variable of type "Subscription", store the observable under inside, and use ngOnDestroy to unsubscribe when the component is destoyed.
