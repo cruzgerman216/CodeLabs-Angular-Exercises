@@ -25,6 +25,8 @@
 - Use pipe and the map operator to manipulate the data. Instead of returning an object, return a string that has "the food you search for was " followed by what the user search for. Make sure whatever the user search for, is ALL UPPER CASE when you return the manipulated data. Example: "The food you search for was PIE".
 - If you enter "localhost:4200/foods/pie", you should get the text "The food you search for was PIE" and rendered onto your webpage.
 
+reference: Upper case your string https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
+
 **Exercise 3: Use filter to manipulate data of an interval observable and the unsubscribe method to destroy the subscription**
 - Generate a new angular application called interval-filter-exercise
 - generate a home and timer component and create it's corresponding routing paths "home" and "timer"
