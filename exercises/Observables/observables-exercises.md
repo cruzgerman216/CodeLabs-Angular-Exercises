@@ -30,7 +30,7 @@ reference: Upper case your string https://developer.mozilla.org/en-US/docs/Web/J
 **Exercise 3: Use filter to manipulate data of an interval observable and the unsubscribe method to destroy the subscription**
 - Generate a new angular application called interval-filter-exercise
 - generate a home and timer component and create it's corresponding routing paths "home" and "timer"
-- In app.component.html, include elements with routlinkers to each component so you can switch between both paths. Of course, implement the router link element to the application
+- In app.component.html, include elements with routlinkers to each component so you can switch between both paths. Of course, implement the router outlet element to app.component.html.
 - In timer.component.ts, import interval from rxjs and use it to increment a number every second. Log to the console the incremented number
 - Make sure you unsubscribe from the observable. To make sure you did this right, switch between the paths. If you are in the home path, you shouldn't see anything log to the console.
 - Use the pipe method and the filter operator from rxjs to pass only even numbers
