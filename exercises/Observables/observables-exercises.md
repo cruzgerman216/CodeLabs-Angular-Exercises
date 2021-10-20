@@ -12,7 +12,7 @@
     - With it's reference, subscribe to the observable that is params and log to the console its data.
 - If you enter "localhost:4200/users/1" to the url search bar, you should be able to see an object that is log to the console such as ```{id: 1}```
 
-**Exercise 2: User pipe and map to manipulate the data the observable passes through**
+**Exercise 2: Use pipe and map to manipulate the data the observable passes through**
 - Generate a new angular application called basic-pipe-map-exercise
 - Generate a foods component
 - In the app-routing module, create a path such as ```"foods/:search"```, it's component will be set to the foods component.
