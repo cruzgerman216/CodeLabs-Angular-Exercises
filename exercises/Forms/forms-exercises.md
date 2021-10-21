@@ -82,3 +82,20 @@ reference: https://angular.io/guide/reactive-forms
 - Generate a navbar component. Use bootstrap to setup a nice looking navbar. 
   - Whenever the user "logins", there should be text in the navbar that changes from "login" to "logout". 
 - Allow the user to also logout and erase the user data.
+
+**Exercise 13: More form practice**
+- Download staring code for [class 10 Angular Example]( https://github.com/WilderDev/Class-10-Angular-Forms-Example)
+- In the app.component.html file, create a container div with a row inside that renders both of our components side-by-side.
+- Inside the "BookFormTemplateComponent": Create a template-driven form that, when submitted, displays all the relevant data below the form.
+  - Title, Author, and Genre should all be required inputs that display an error message with a red border when touched and invalid.
+  - Set 'mystery' to be the default value on the genre select box.
+  - Use two-way-binding to display the name of the book after the word "Submit" on the submit button.
+  - Display the title, author, and genre below the form when a user clicks "Submit". (Also, reset the form.)
+- Inside the "BookFormReactiveComponent": Create a reactive-driven form that, when submitted, displays all the relevant data below the form.
+  - Title, Author, and Genre should all be required inputs that display an error message with a red border when touched and invalid.
+  - Set 'mystery' to be the default value on the genre select box.
+  - Display the title, author, and genre below the form when a user clicks "Submit". (Also, reset the form.)
+- Publish to Github. Inside the README.md file, write your experience of the different approaches.
+  - Define the "Template-Driven-Approach" and the "Reactive-Driven-Approach".
+  - Explain their differences and what each excel at doing.
+  - Write about what you find easy and what is challenging about each.
