@@ -3,7 +3,7 @@
 ### Enable routing and non-strict mode to all projects
 
  **Exercise 1: Log to the console form values using the template driven approach**
-- Generate a new angular application called basic-template-driven-exercise
+- Generate a new angular application called BasicTemplateDrivenExercise
 - In app.component.html, create a form element. Inside of the form element, create an input element alongside with a button element. Give the button element a type set to submit and content "submit". 
 - Give the input element an attribute name that is set to ```"username"```
 - Use the template driven approach to access the values from this form and log them to the console.
@@ -18,7 +18,7 @@ Example of @ViewChild
 ```
 
 **Exercise 2: Log to the console form values using the template driven approach**
-- Generate a new angular application called another-basic-template-driven-exercise
+- Generate a new angular application called AnotherBasicTemplateDrivenExercise
 - In app.component.html, create a form element. Inside of the form element, create an input element alongside with a button element. Give the button element a type set to submit and content "submit". Give the input element an attribute name that is set to ```"firstname"```. 
 - Create another input and set it's name to ```"lastname"```
 - Create another input and set it's name to ```"username"```
@@ -29,7 +29,7 @@ Example of @ViewChild
 - Use the template driven approach to access the values from this form and log them to the console.
 
 **Exercise 3: Add validators to the form inputs**
-- Generate a new angular application called basic-form-validators-exercise
+- Generate a new angular application called BasicFormValidatorsExercise
 - In app.component.html, create a form element. Inside of the form element, create an input element alongside with a button element. Give the button element a type set to submit and content "submit". Give the input element a name that is set to ```"username"```. 
 - Add the built in 'required' validator to the input element
 - Use the template driven approach to log to the console the form's values.
@@ -38,7 +38,7 @@ Example of @ViewChild
 
 
 **Exercise 4: Implement a disabled button for when the form is invalid and style the input fields for when the form is invalid**
-- Generate a new angular application called disabled-form-button-validators-exercise
+- Generate a new angular application called DisabledFormButtonValidatorsExercise
 - In app.component.html, create a form with input elements and a submit button.
 - All input elements should be required.
 - If the form is invalid, disable the submit button.
@@ -49,7 +49,7 @@ input.ng-invalid.ng-touched{border: 1px solid red;}
 ```
 
 **Exercise 5: when the form is invalid, use ngIf to let the user know it is invalid**
-- Generate a new angular application called ngIf-invalid-form-exercise
+- Generate a new angular application called NgIfInvalidFormExercise
 - In app.component.html, create a form with an input element, label element and a button element. Configure the set up like the previous exercises. (name attribute, type attribute, ect)
 - The input element should have a validation of required
 - Disable the button and style the form when it is invalid
@@ -63,13 +63,13 @@ input.ng-invalid.ng-touched{border: 1px solid red;}
 reference: https://angular.io/guide/reactive-forms
 
 **Exercise 11: Create your own custom Validator**
-- Generate a new angular application called custom-validator-exercise
+- Generate a new angular application called CustomValidatorExercise
 - In app.component.html, create a form along with an input element, label element and a submit button. Configure the set up as a reactive approach. Fill in the label with anything, add the appropriate attributes, ect.
 -  Create a custom validation so that the input field needs at least 5 character to be valid.
 -  When it's invalid, disable the button, otherwise enable the button.
 
 **Exercise 12: Login Project**
-- Generate a new angular application called login-forms-project
+- Generate a new angular application called LoginFormsProject
 - Generate a component home and login-page
 - Create it's corresponding routes to each component using the angular routing features
 - Whenever you are at path '', redirect to login.
