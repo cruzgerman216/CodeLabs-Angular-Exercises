@@ -73,13 +73,14 @@ reference: https://angular.io/guide/reactive-forms
 - Generate a component home and login-page
 - Create it's corresponding routes to each component using the angular routing features
 - Whenever you are at path '', redirect to login.
+- Generate a navbar component. Use bootstrap to setup a nice looking navbar. 
+  - Add routerlinks to be able to navigate from home to the login page(vice versa)
 - Configure the login-page with the following form:
   - Create a form (template or reactive) that allows the user to enter a username and password. Create a button, set it's attribute type to submit with content "login". 
   - Make both username and password required
   - When the form is invalid, disabled the login buttom
 - When the user logins, navigate the user to the home component. Make it so that when the user is in the home page, you are able to see the user's username and password on the page when loggin.
   - You may have to use a service to allow both components to communicate with each other.
-- Generate a navbar component. Use bootstrap to setup a nice looking navbar. 
   - Whenever the user "logins", there should be text in the navbar that changes from "login" to "logout". 
 - Allow the user to also logout and erase the user data.
 
