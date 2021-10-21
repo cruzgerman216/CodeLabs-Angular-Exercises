@@ -31,9 +31,11 @@ Example of @ViewChild
 **Exercise 3: Add validators to the form inputs**
 - Generate a new angular application called basic-form-validators-exercise
 - In app.component.html, create a form element. Inside of the form element, create an input element alongside with a button element. Give the button element a type set to submit and content "submit". Give the input element a name that is set to ```"username"```. 
-- Add the required validator to the input element
+- Add the built in 'required' validator to the input element
 - Use the template driven approach to log to the console the form's values.
 - When you inspect the input element on the page, once the input field is empty, you should see invalid added onto the input element. Once you type into the field, you should see valid added onto the input element.
+
+
 
 **Exercise 4: Implement a disabled button for when the form is invalid and style the input fields for when the form is invalid**
 - Generate a new angular application called disabled-form-button-validators-exercise
@@ -48,7 +50,7 @@ input.ng-invalid.ng-touched{border: 1px solid red;}
 
 **Exercise 5: when the form is invalid, use ngIf to let the user know it is invalid**
 - Generate a new angular application called ngIf-invalid-form-exercise
-- In app.component.html, create a form with an input element and a submit button. Configure the set up like the previous exercises. (name attribute, type attribute, ect)
+- In app.component.html, create a form with an input element, label element and a button element. Configure the set up like the previous exercises. (name attribute, type attribute, ect)
 - The input element should have a validation of required
 - Disable the button and style the form when it is invalid
 - Use ngIf to display a message "invalid input" for when the form is invalid
@@ -59,3 +61,22 @@ input.ng-invalid.ng-touched{border: 1px solid red;}
 - Repeat exercises 1-5 but instead of the template driven approach, use the reactive approach. Refer to your code coach's notes and references.
 
 reference: https://angular.io/guide/reactive-forms
+
+**Exercise 11: Create your own custom Validator**
+- Generate a new angular application called custom-validator-exercise
+- In app.component.html, create a form along with an input element, label element and a submit button. Configure the set up as a reactive approach. Fill in the label with anything, add the appropriate attributes, ect.
+-  Create a custom validation so that the input field needs at least 5 character to be valid.
+-  When it's invalid, disable the button, otherwise enable the button.
+
+**Exercise 12: Login Project**
+- Generate a new angular application called login-forms-project
+- Generate a component home and login-page
+- Create it's corresponding routes to each component using the angular routing features
+- Whenever you are at path '', redirect to login.
+- Configure the login-page with the following form:
+  - Create a form (template or reactive) that allows the user to enter a username and password. Create a button, set it's attribute type to submit with content "login". 
+- When the user logins, navigate the user to the home component. Make it so that when you do navigate to the home page, you are able to see the user's username and password on the page.
+  - You may have to use a service to allow both components to communicate with each other.
+- Generate a navbar component. Use bootstrap to setup a nice looking navbar. 
+  - Whenever the user "logins", there should be text in the navbar that changees from "login" to "logout". 
+- Allow the user to also logout and erase the user data.
