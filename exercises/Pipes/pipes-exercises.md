@@ -12,11 +12,25 @@
 
 reference: https://angular.io/api/common/LowerCasePipe
 
- **Exercise 1.2: Currency in EURos**
+ **Exercise 1.2: Currency in EURos and using a pipe parameter**
 - create a property called wallet of type number and set it to 50.04;
-- Use string interpolation to output the value of wallet to the webpage
+- Use string interpolation to output the value of wallet onto the webpage
 - Use a currency pipe function to change the output of the wallet property into dollar amounts.
-- By default, it'll give you a USD symbol. Use the reference to cahnge the symbol from USD to European currency. 
+- By default, it'll give you a USD symbol. Use the reference provided below as a guide to change the symbol from USD to European currency. 
 reference: https://angular.io/api/common/CurrencyPipe
 
-**Exercise 1.3: 
+**Exercise 1.3: Create your own custom lowercase pipe**
+- Create a property called sentence of type string and set it to "I went to go watch the Spiderman movie with my aunt May."
+- Use string interpolation to output the value of sentence onto the webpage
+- Manually create a custom pipe called 'mylowercasepipe' without the angular CLI and apply the pipe to the sentence value to transform its data to all lower case. Use the reference to help you do that.
+- When you run ng serve you should get "i went to go watch the spiderman movie with my aunt may."
+
+reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase
+
+**Exercise 1.4: Transform data that holds a string with more than X characters**
+- Create a property called loremSentence of type string and set it to "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+- Use string interpolation to output the value of loremSetence onto the webpage
+- Generate a pipe using the cli ```ng g p pipename``` called xAmountOfCharacters. When applied to the loremSentence, make it so that only the first x amount of characters will show followed by "...". Use a pipe paramter to set x. 
+
+For example if you set x to be 5, then your output should be 
+```Lorem...```
