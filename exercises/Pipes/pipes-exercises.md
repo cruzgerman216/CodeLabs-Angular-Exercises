@@ -23,7 +23,7 @@ reference: https://angular.io/api/common/CurrencyPipe
 - Create a property called sentence of type string and set it to "I went to go watch the Spiderman movie with my aunt May."
 - Use string interpolation to output the value of sentence onto the webpage
 - Manually create a custom pipe called 'mylowercasepipe' without the angular CLI and apply the pipe to the sentence value to transform its data to all lower case. Use the reference to help you do that.
-- When you run ng serve you should get "i went to go watch the spiderman movie with my aunt may."
+- When you run 'ng serve' you should get "i went to go watch the spiderman movie with my aunt may."
 
 reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase
 
@@ -34,3 +34,15 @@ reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Glo
 
 For example if you set x to be 5, then your output should be 
 ```Lorem...```
+
+**Exercise 1.5: Create a filter pipe that's filters an array**
+- Create a property called petThoughts of type string and set it to 
+```['Cats are awesome.', 'Cats are sneaky.', 'Cats and dogs are both amazing!', 'Dogs are great.', 'Dogs are hyper.']```
+    - use ngfor to output the elements of petThoughts
+- Create an input element and use two way data binding to capture whatever the user type and put it into a class property called filterResults of type string set to ''
+- Generate a custom pipe called filterPets and make it so you are able to filter through the array petThoughts. You will need to set up a parameter to be able to keep track of what the user type
+
+- run 'ng serve', when you type 'Cats' into the input field, you should see
+   Cats are awesome. 
+   Cats are sneaky.
+   Cats and dogs are both amazing!
