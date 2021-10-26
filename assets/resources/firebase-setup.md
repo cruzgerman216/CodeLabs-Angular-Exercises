@@ -1,4 +1,4 @@
-
+# Create a Firebase Project
 
 1. Make sure to log into a google account beforehand
 2. Go to [firebase](https://console.firebase.google.com/)
