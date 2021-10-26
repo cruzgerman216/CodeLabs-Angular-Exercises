@@ -40,9 +40,12 @@ For example if you set x to be 5, then your output should be
 ```['Cats are awesome.', 'Cats are sneaky.', 'Cats and dogs are both amazing!', 'Dogs are great.', 'Dogs are hyper.']```
     - use ngfor to output the elements of petThoughts
 - Create an input element and use two way data binding to capture whatever the user type and put it into a class property called filterResults of type string set to ''
-- Generate a custom pipe called filterPets and make it so you are able to filter through the array petThoughts. You will need to set up a parameter to be able to keep track of what the user type
+- Generate a custom pipe called filterPets and make it so you are able to filter through the array petThoughts. You will need to set up a parameter to be able to keep track of what the user type. Use the reference to check whether the string starts with filteredResults.
 
 - run 'ng serve', when you type 'Cats' into the input field, you should see
    Cats are awesome. 
    Cats are sneaky.
    Cats and dogs are both amazing!
+
+
+Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith
