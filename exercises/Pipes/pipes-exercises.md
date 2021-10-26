@@ -30,7 +30,7 @@ reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Glo
 **Exercise 1.4: Transform data that holds a string with more than X characters**
 - Create a property called loremSentence of type string and set it to "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
 - Use string interpolation to output the value of loremSetence onto the webpage
-- Generate a pipe using the cli ```ng g p pipename``` called xAmountOfCharacters. When applied to the loremSentence, make it so that only the first x amount of characters will show followed by "...". Use a pipe paramter to set x. 
+- Generate a pipe using the cli ```ng g p pipename``` called xAmountOfCharacters. When applied to the loremSentence, make it so that only the first x amount of characters will show followed by "...". Use a pipe parameter to set x. 
 
 For example if you set x to be 5, then your output should be 
 ```Lorem...```
