@@ -10,3 +10,20 @@ reference: [Firebase Setup](https://github.com/cruzgerman216/CodeLabs-Angular-Ex
 
 
  **Exercise 1.1: Send a Post request to firebase**
+- Generate a new angular application called basic-angular-http-request-exercies
+- Create an h1 element with content "My Movies"
+- Create an h3 element with content "Add Movie"
+- Create a form with inputs and labels corresponding to title and genre. Include a button with content 'create Movie'
+  - Configure the form in the template driven approach or the reactive approach
+    Note: Make sure you add the right modules to your app module. 
+      FormsModule(Template driven)
+      ReactiveFormsModule(Reactive)
+- Create a post request that allows you to add an object with properties title and genre to the firebase database you created from the start
+  - Make sure you Inject the HttpClient to your component AND import the HttpClientModule to your app module. Include HttpClientModule to your imports array.
+```typescript 
+import {HttpClientModule} from '@angular/common/http'
+```
+  - When making a request, make sure you include "movies.json" at the end of the URL
+    Example: ```https://my-test580f1-default-rtdb.firebaseio.com/movies.json```
+  - Be sure to use the subscribe method as you are dealing with an observable(in the subscribe method, you will get back a response, log the response to the console)
+- When sending a post request, you should see the values you inputed in the form, saved to the database.
