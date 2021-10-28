@@ -52,8 +52,13 @@ Reference: Example
 reference: https://loading.io/css/ (NOTE: you will have to change the colors in the css. By default the colors applied to the css are white)
 
 **Exercise 1.4: Send a delete request to delete all movie data**
-- Create a button with content "clear movies". Use event binding to execute a method called "onClearMovies" 
+- Create a button with content "clear movies". When clicking the button, use event binding to execute a method called "onClearMovies"
 - In the onClearMovies method, send a delete request to delete all movie data. 
 - After deleting all movie data, make it so that you clear the myMovies array.
 
-
+**Exercise 1.5: Output an error message when retrieving an error response**
+- Create a button with content "Retrieve data from fake URL endpoint". When clicking the button, use event binding to execute a method called "getFakeData".
+- Send a get request to this url endpoint ```https://Im-a-fake-URL.com```.
+- You will get an error. When checking for an error response, there should be a message property that exists in the error response. Store that value in a class property called error. When creating the class property error, set it to null initially.
+- Use string interpolation to output the value of error. Error should not be showing when null.
+- When clicking this button, you should get ```Http failure response for https://Im-a-fake-URL.com: 0 Unknown Error``` rendered onto the page.
