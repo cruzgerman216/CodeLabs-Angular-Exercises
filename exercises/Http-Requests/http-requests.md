@@ -50,3 +50,10 @@ Reference: Example
 
 
 reference: https://loading.io/css/ (NOTE: you will have to change the colors in the css. By default the colors applied to the css are white)
+
+**Exercise 1.4: Send a delete request to delete all movie data**
+- Create a button with content "clear movies". Use event binding to execute a method called "onClearMovies" 
+- In the onClearMovies method, send a delete request to delete all movie data. 
+- After deleting all movie data, make it so that you clear the myMovies array.
+
+
