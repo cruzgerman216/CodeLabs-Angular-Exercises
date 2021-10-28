@@ -33,7 +33,7 @@ import {HttpClientModule} from '@angular/common/http'
 - Create an h3 element with content "List of Movies"
 - Create a button with content "retrieve movies" and incorporate event binding to execute a method called onRecieveMovies()
 - In the onRecieveMovies method, make a get request to access the movie data from the firebase database. 
-- We want to ultimately get an array to output onto the webpage, however, we get an object as a response, use the pipe method and the map operator to change the response into an array. Refer to the reference as an example to access each value from the response. Of course, use console log the data as well to see what exactly is the response.
+  - Use the pipe method and the map operator to change the response into an array. Refer to the reference as an example to access each value from the response. Of course, use console log the data as well to see what exactly is the response.
 
 Reference: Example
 ```typescript
@@ -43,3 +43,10 @@ Reference: Example
 ```
 - In the subscribe method, store the data that is being passed in, in a property called myMovies which is set to any empty array initially;
 - Use ngFor to output the array of myMovies. You should see the data that exists from firebase onto your webpage.
+
+**Exercise 1.3: Add a loading icon when sending a get request to firebase**
+- When fetching the movie data using a get request, use a loading icon to indicate that you are loading the movie data (refer to the reference for free icons)
+- When you are finishing getting the movie data, the icon shouldn't be showing.
+
+
+reference: https://loading.io/css/ (NOTE: you will have to change the colors in the css. By default the colors applied to the css are white)
