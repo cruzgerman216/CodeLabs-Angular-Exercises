@@ -15,11 +15,9 @@ reference: [Firebase Setup](https://github.com/cruzgerman216/CodeLabs-Angular-Ex
 - Create an h3 element with content "Add Movie"
 - Create a form with inputs and labels corresponding to title and genre. Include a button with content 'create Movie'
   - Configure the form in the template driven approach or the reactive approach
-<br/>
-    Note: Make sure you add the right modules to your app module. 
-<br/>
-      ```FormsModule``` (Template driven)
-      ```ReactiveFormsModule``` (Reactive)
+    - Note: Make sure you add the right modules to your app module. 
+       - ```FormsModule``` (Template driven)
+        - ```ReactiveFormsModule``` (Reactive)
 - Create a post request that allows you to add an object with properties title and genre to the firebase database you created from the start
   - Make sure you Inject the HttpClient to your component AND import the HttpClientModule to your app module. Include HttpClientModule to your imports array.
 ```typescript 
