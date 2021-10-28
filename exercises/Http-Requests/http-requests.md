@@ -29,11 +29,10 @@ import {HttpClientModule} from '@angular/common/http'
 - When sending a post request, you should see the values you inputed in the form, saved to the database. Go to firebase to confirm this.
 
 **Exercise 1.2: Send a get request to firebase to retrieve movie data**
-
 - Create an h3 element with content "List of Movies"
 - Create a button with content "retrieve movies" and incorporate event binding to execute a method called onRecieveMovies()
-- In the onRecieveMovies method, make a get request to access the movie data from the firebase database. 
-  - Use the pipe method and the map operator to change the response into an array. Refer to the reference as an example to access each value from the response. Of course, use console log the data as well to see what exactly is the response.
+- In the onRecieveMovies method, make a get request to access the movie data from firebase. 
+  - Use the pipe method and the map operator to change the response into an array. Refer to the reference as an example to access each value from the response. Of course, console log the data as well to see what exactly is the response.
 
 Reference: Example
 ```typescript
@@ -42,14 +41,13 @@ Reference: Example
       }
 ```
 - In the subscribe method, store the data that is being passed in, in a property called myMovies which is set to any empty array initially;
-- Use ngFor to output the array of myMovies. You should see the data that exists from firebase onto your webpage.
+- Use ngFor to output the array of myMovies. You should see the data that exists from firebase onto your webpage after clicking the button.
 
 **Exercise 1.3: Add a loading icon when sending a get request to firebase**
 - When fetching the movie data using a get request, use a loading icon to indicate that you are loading the movie data (refer to the reference for free icons)
-- When you are finishing getting the movie data, the icon shouldn't be showing.
+- When you are finished getting the movie data, the icon shouldn't be showing.
 
-
-reference: https://loading.io/css/ (NOTE: you will have to change the colors in the css. By default the colors applied to the css are white)
+reference: https://loading.io/css/ (NOTE: you will have to change the colors in the css. By default the colors applied to the css for these icons are white)
 
 **Exercise 1.4: Send a delete request to delete all movie data**
 - Create a button with content "clear movies". When clicking the button, use event binding to execute a method called "onClearMovies"
@@ -59,10 +57,10 @@ reference: https://loading.io/css/ (NOTE: you will have to change the colors in 
 **Exercise 1.5: Output an error message when retrieving an error response**
 - Create a button with content "Retrieve data from fake URL endpoint". When clicking the button, use event binding to execute a method called "getFakeData".
 - Send a get request to this url endpoint ```https://Im-a-fake-URL.com```.
-- You will get an error. When checking for an error response, there should be a message property that exists in the error response. Store that value in a class property called error. When creating the class property error, set it to null initially.
+- You will get an error. When checking for an error response, there should be a message property that exists. Store that value in a class property called error. When creating the class property error, set it to null initially.
 - Use string interpolation to output the value of error. Error should not be showing when null.
 - When clicking this button, you should get ```Http failure response for https://Im-a-fake-URL.com: 0 Unknown Error``` rendered onto the page.
 
 **Exercise 1.6: Separate the logic of http requets into a service**
 - Create a service called data-storage.service.ts.
-- Instead of including the logic of making http requests in the app component, abstract the logic into data-storage.service.ts and inject the service into your app component to make http requests. Of course you would have to return an observable like Max did.
+- Instead of including the logic of making http requests in a app component, abstract the logic into data-storage.service.ts and inject the service into your component to make http requests. Of course you would have to return an observable like Max did.
