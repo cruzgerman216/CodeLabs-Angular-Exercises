@@ -8,7 +8,6 @@
    - Refer to this markdown file on how to setup a firebase project 
 reference: [Firebase Setup](https://github.com/cruzgerman216/CodeLabs-Angular-Exercises/blob/main/assets/resources/firebase-setup.md)
 
-
  **Exercise 1.1: Send a Post request to firebase to add movie data**
 - Generate a new angular application called basic-angular-http-request-exercies
 - Create an h1 element with content "My Movies"
@@ -27,6 +26,9 @@ import {HttpClientModule} from '@angular/common/http'
     Example: ```https://my-test580f1-default-rtdb.firebaseio.com/movies.json```
   - Be sure to use the subscribe method as you are dealing with an observable(in the subscribe method, you will get back a response, log the response to the console)
 - When sending a post request, you should see the values you inputed in the form, saved to the database. Go to firebase to confirm this.
+
+- OPTIONAL: Install the [JSONView extension](https://chrome.google.com/webstore/search/json%20view) in google chrome to organize the view of API data in your browser.
+  - If you for example, enter "https://my-URL-ENDPOINT-yours-will-look-different.com/movies.json" in url search bar, you should see your movies data onto the webpage in an organize way.
 
 **Exercise 1.2: Send a get request to firebase to retrieve movie data**
 - Create an h3 element with content "List of Movies"
