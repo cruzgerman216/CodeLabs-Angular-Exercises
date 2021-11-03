@@ -9,7 +9,7 @@
 reference: [Firebase Setup](https://github.com/cruzgerman216/CodeLabs-Angular-Exercises/blob/main/assets/resources/firebase-setup.md)
 
  **Exercise 1.1: Send a Post request to firebase to add movie data**
-- Generate a new angular application called basic-angular-http-request-exercies
+- Generate a new angular application called basic-angular-http-request-exercises
 - Create an h1 element with content "My Movies"
 - Create an h3 element with content "Add Movie"
 - Create a form with inputs and labels corresponding to title and genre. Include a button with content 'create Movie'
