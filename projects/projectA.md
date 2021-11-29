@@ -30,7 +30,7 @@ A post can have likes and dislikes!
 
 #### Design 
 https://www.figma.com/file/PMxjIII4uKkPEtWJLxmh1n/Untitled?node-id=0%3A1
-
+- Be creative in the design. This is only the layout of what it looks like.
 
 Create an MVP first without diving into additional features
 - MVP stands for Minimal Viable Product. Althought this application has a couple of features, start off with the baseline of the project and then work your way up into adding additional features
