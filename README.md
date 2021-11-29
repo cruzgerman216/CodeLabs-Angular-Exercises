@@ -5,3 +5,4 @@
 - [Forms](https://github.com/cruzgerman216/CodeLabs-Angular-Exercises/blob/main/exercises/Forms/forms-exercises.md)
 - [Pipes](https://github.com/cruzgerman216/CodeLabs-Angular-Exercises/blob/main/exercises/Pipes/pipes-exercises.md)
 - [Http Requests](https://github.com/cruzgerman216/CodeLabs-Angular-Exercises/blob/main/exercises/Http-Requests/http-requests.md)
+- [Projects](https://github.com/cruzgerman216/CodeLabs-Angular-Exercises/blob/main/projects/projectA.md)
