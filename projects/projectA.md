@@ -6,31 +6,34 @@
 ```
 Social Media App
 
-I want to create the next Facebook, Twitter and Instagram (without getting sued for copyright, kidding). I need your help! 
+I want to create the next Facebook, Twitter and Instagram. I need your help! 
 
 We want to make a social media application that allows people to post their statuses and add other people as their friends.
 
-We would like people to view their friends posts in their homepage. It would also be nice to allow users to have their own profile and see all of their posts.
+We would like people to view their friends posts in their homepage as well as their own. It would also be nice to allow users to have their own profile and see all of their posts.
 
 It would be great when you add a friend, a modal pops up with "You added {name}"!
-
-A user would be able to unfriend a friend.
-
-A post can have likes and dislikes!
 
 Adding login and sign up functionality would be great! That means a login/sign up page.
 
 A user should have an email, password and ID.
 
 A post should have user id belonging to the user who created it and a description.
+
+Additional featurs I like would be: 
+
+A user would be able to unfriend a friend.
+
+A post can have likes and dislikes!
+
 ```
 
 #### Design 
 https://www.figma.com/file/PMxjIII4uKkPEtWJLxmh1n/Untitled?node-id=0%3A1
 
 
-Create a MVP FIRST
-- MVP stands for Minimal Viable Product. Althought this application has a couple of features, start off with the baseline of the project and then add features
+Create an MVP first without diving into additional features
+- MVP stands for Minimal Viable Product. Althought this application has a couple of features, start off with the baseline of the project and then work your way up into adding additional features
 
 
 # MVP Task Breakdown
